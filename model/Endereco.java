@@ -1,27 +1,24 @@
-package com.mycompany.trabum.model;
+package model;
 
 public class Endereco {
     
-    //ATRIBUTOS
     private String nmRua;
     private String nmBairro;
     private int nmrCasa;
     private String nmCidade;
     private String nmEstado;
-    private String uf;
+    private String pais;
     
-    public Endereco(){
-        
-    }
+    public Endereco() {}
     
     public Endereco(String nmRua, String nmBairro, int nmrCasa, 
-        String nmCidade, String nmEstado, String uf){
+        String nmCidade, String nmEstado, String pais){
         this.nmRua = nmRua;
         this.nmBairro = nmBairro;
         this.nmrCasa = nmrCasa;
         this.nmCidade = nmCidade;
         this.nmEstado = nmEstado;
-        this.uf = uf;
+        this.pais = pais;
     }
     
     public String getNmRua(){
@@ -43,7 +40,7 @@ public class Endereco {
     public int getNmrCasa(){
         return nmrCasa;
     }
-    
+
     public void setNmrCasa(int nmrCasa){
         this.nmrCasa = nmrCasa;
     }
@@ -63,18 +60,19 @@ public class Endereco {
     public void setNmEstado(String nmEstado){
         this.nmEstado = nmEstado;
     }
-    
-    public String getUf(){
-        return uf;
+
+    public String getPais() {
+        return pais;
     }
-    
-    public void setUf(String uf){
-        this.uf = uf;
+
+    public void setPais(String pais) {
+        this.pais = pais;
     }
 
     @Override
     public String toString() {
-        return "Endereco{" + "nmRua=" + nmRua + ", nmBairro=" + nmBairro + ", nmrCasa=" + nmrCasa + ", nmCidade=" + nmCidade + ", nmEstado=" + nmEstado + ", uf=" + uf + '}';
+        return "Endereco{" + "Nome da rua= " + nmRua + ", Nome do Bairro= " + nmBairro + ", Numero da Casa= " + nmrCasa +
+                ", Nome da Cidade= " + nmCidade + ", Nome do Estado= " + nmEstado + ", pais= " + pais + '}';
     }
     
     
