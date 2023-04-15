@@ -1,14 +1,12 @@
 package com.mycompany.trabum.model;
 
 public class Cliente {
-    
-    //ATRIBUTOS
+
     private String nmCliente;
     private String cliCpf;
     private int idade;
     private Endereco Endereco;
-    
-    //CONSTRUTORES
+
     public Cliente(){
         
     }
@@ -18,8 +16,7 @@ public class Cliente {
         this.cliCpf = cliCpf;
         this.idade = idade;
     }
-
-    //GET E SETTERS
+    
     public String getNmCliente() {
         return nmCliente;
     }

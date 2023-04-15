@@ -2,7 +2,6 @@ package com.mycompany.trabum.model;
 
 public class Endereco {
     
-    //ATRIBUTOS
     private String nmRua;
     private String nmBairro;
     private int nmrCasa;
